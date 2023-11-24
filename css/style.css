@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    color: #CCCCAA;
+}
+
+body{
+    background-color: #000011;
+}
+
+#buscanimas-container {
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+    grid-template-rows: repeat(10, auto);
+    width: 750px;
+    gap: 5px;
+    margin: auto;
+}
+
+#buscanimas-container div{
+    display: inline-block;
+    text-align: center;
+    line-height: 100%;
+    font-size: 70px;
+    font-family: monospace;
+    height: 70px;
+    width: 70px;
+    background-color: grey;
+}
+#buscanimas-container div[marked]{
+    background-image: url(../img/nimas.jpg);
+    background-size: contain;
+}
+#buscanimas-container div[known]{
+    background-color: lightgray;
+}
+#buscanimas-container div img {
+    width: 100%;
+}
+
+.messageScreen {
+    position: relative;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+}
+
+.messageScreen h2{
+    width: 100%;
+    margin: 10px 0;
+    font-size: 20px;
+    color: #CCCCAA;
+}
+
+.messageScreen h2 a{
+    color: #AAAACC;
+}
+
+.messageScreen img {
+    max-height: calc(90vh - 10px);
+    max-width: 90vw;
+}
